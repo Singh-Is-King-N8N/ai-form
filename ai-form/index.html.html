@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Report Absence or Early Pickup</title>
+  </head>
+  <body>
+    <h2>Report Absence or Early Pickup</h2>
+    <form method="POST" action="https://cheemag.app.n8n.cloud/webhook-test/ai-receptionist">
+      <label>Type:</label><br />
+      <select name="type" required>
+        <option value="Absent">Absent</option>
+        <option value="Early Pickup">Early Pickup</option>
+      </select><br /><br />
+
+      <label>Student Name:</label><br />
+      <input type="text" name="student_name" required /><br /><br />
+
+      <label>Reason:</label><br />
+      <input type="text" name="reason" required /><br /><br />
+
+      <label>Date:</label><br />
+      <input type="date" name="date" required /><br /><br />
+
+      <label>Caller Phone Number:</label><br />
+      <input type="tel" name="caller_number" required /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
